@@ -1,0 +1,157 @@
+
+   body {
+    background-color: #053861;
+    background-image: url("/img/santiago.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .izqui{
+    justify-content: flex-start;    
+  }
+  header {
+    display: flex;
+    background-color: #053861;
+    padding: 10px;
+    justify-content: flex-start;
+
+    /* opacity: 0.5; */
+    
+  }
+  header h1{
+    color: white;
+  }
+  .titulo{
+    color: white;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 1.2);
+    margin-left: 30px;
+    margin-bottom: 5px;
+  }
+  .parrafo{
+    color: white;
+    margin-top: 30px;
+    margin-left: 30px;
+    text-transform: uppercase;
+  }
+  .santiago{
+    display: flex; 
+    align-items: center;
+  }
+  header div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+  }
+  
+  header nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  header nav a {
+    display: flex;
+    align-items: end;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  header nav a img {
+    display: flex;
+  justify-content: flex-start;
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+    
+  }
+  
+  header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    
+  }
+  
+  header ul li a {
+    margin-right: 10px;
+    
+  }
+
+   .home{
+    color: black;
+    text-decoration: none;
+    
+  }
+  img {
+    display: block;
+    text-align: center;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    text-decoration: none;
+    max-width: 100%;
+    height: auto;
+    
+  }
+.bordes{
+  border: 1px solid #ccc;
+  background-image: linear-gradient(rgba(62, 164, 201, 0.5), rgba(62, 164, 201, 0.8)); 
+  padding: 10px; 
+  margin-top:200px ;
+  margin-bottom: 200px;
+  margin-left: 100px;
+  margin-right: 100px;
+  
+}
+  /* Estilos responsivos */
+  @media only screen and (max-width: 600px) {
+    header div {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .titulo {
+      margin-left: 10px;
+      margin-bottom: 2px;
+      font-size: 20px;
+    }
+  
+    .parrafo {
+      margin-top: 20px;
+      margin-left: 10px;
+      font-size: 14px;
+    }
+  
+    .santiago {
+      justify-content: center;
+    }
+  }
+  
+  
+  /* @media only screen and (max-width: 600px) {
+    .search-form {
+      max-width: 100%;
+    }
+  } */
+  /* @media only screen and (max-width: 600px) {
+    header div {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  } */
+
+    
+
+
+ 
+
+  @media (min-width: 600px) {
+    .card .row.g-0 {
+      flex-direction: row-reverse;
+    }
+  }
+    
