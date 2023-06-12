@@ -1,49 +1,54 @@
 
    body {
     background-color: #053861;
-    background-image: url("/img/santiago.jpg");
+    background-image: url("/img/arches-national-park-1846759_1280.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
-  .izqui{
-    justify-content: flex-start;    
-  }
+  
+
   header {
     display: flex;
     background-color: #053861;
     padding: 10px;
-    justify-content: flex-start;
-
-    /* opacity: 0.5; */
     
   }
-  header h1{
-    color: white;
-  }
-  .titulo{
-    color: white;
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 1.2);
-    margin-left: 30px;
-    margin-bottom: 5px;
-  }
-  .parrafo{
-    color: white;
-    margin-top: 30px;
-    margin-left: 30px;
-    text-transform: uppercase;
-  }
-  .santiago{
-    display: flex; 
-    align-items: center;
-  }
-  header div {
+  header {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    
   }
   
+  .header-left {
+    margin-right: auto;
+  }
+  
+  .header-right {
+    margin-left: auto;
+    margin-right: 50px;
+    transition: all 0.8s;
+
+  }
+  #Home:hover{
+    color: white;
+    background-color: #010c18;
+    text-decoration: none;
+  }
+  
+  #Contacto:hover{
+    color: white;
+    background-color: #010c18;
+    text-decoration: none;
+  }
+  #Registrate:hover{
+    color: white;
+    background-color: #010c18;
+    text-decoration: none;
+  }
+
+  
+
+    
   header nav {
     display: flex;
     flex-wrap: wrap;
@@ -60,33 +65,23 @@
   
   header nav a img {
     display: flex;
-  justify-content: flex-start;
-    max-width: 100px;
+    justify-content: flex-start;
+    max-width: 170px;
     height: auto;
     margin-right: 10px;
-    
   }
   
-  header ul {
+   header ul {
     display: flex;
     align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
-    
-    
   }
-  
   header ul li a {
     margin-right: 10px;
     
-  }
-
-   .home{
-    color: black;
-    text-decoration: none;
-    
-  }
+  }     
   img {
     display: block;
     text-align: center;
@@ -95,18 +90,62 @@
     margin: 0;
     text-decoration: none;
     max-width: 100%;
-    height: auto;
-    
+    height: auto;  
   }
 .bordes{
   border: 1px solid #ccc;
-  background-image: linear-gradient(rgba(62, 164, 201, 0.5), rgba(62, 164, 201, 0.8)); 
+  background-color: rgba(51,51,51,.8); 
   padding: 10px; 
   margin-top:200px ;
   margin-bottom: 200px;
   margin-left: 100px;
   margin-right: 100px;
+  border-radius: 30px;
   
+}
+.titulo{
+  color: white;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 1.2);
+  margin-left: 50px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.parrafo{
+  color: white;
+  margin-top: 30px;
+  margin-left: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.santiago{
+  display: flex; 
+  align-items: center;
+  margin: 10px 0;
+
+}
+
+.home{
+  color: black;
+  text-decoration: none;
+  margin-left: 70px;
+  
+}
+.clearfix{
+  color: black;
+  margin-left: 100px;
+  margin-top: 50px;
+}  
+
+.navbar-brand {
+  color: #053861;
+  font-weight: bold;
+}
+.form-control {
+  margin-right: 5px;
+}
+.btn-outline-success {
+  
+  margin-left: 5px;
 }
   /* Estilos responsivos */
   @media only screen and (max-width: 600px) {
@@ -130,25 +169,6 @@
       justify-content: center;
     }
   }
-  
-  
-  /* @media only screen and (max-width: 600px) {
-    .search-form {
-      max-width: 100%;
-    }
-  } */
-  /* @media only screen and (max-width: 600px) {
-    header div {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  } */
-
-    
-
-
- 
-
   @media (min-width: 600px) {
     .card .row.g-0 {
       flex-direction: row-reverse;

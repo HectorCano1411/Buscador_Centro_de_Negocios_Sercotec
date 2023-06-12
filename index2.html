@@ -6,74 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <title>Catalogo Emprendedores</title>
 </head>
 <body >
-    <header>
-        
-        <div>
-          <nav>
-            <a
-              href="https://www.sercotec.cl/centros-de-negocios/centro-de-desarrollo-de-negocios-la-florida/"
-              target="_blank"
-            >
-              <img
-                src="img/Logo CDN SECUNDARIO Color + letra blanca.png"
-                alt="centros-de-negocios"
-                title="centros-de-negocios"
-              />
-            </a>
-           
-            </a>
-            <a href="https://www.sercotec.cl/" target="_blank">
-              <img
-                src="img/logo_sercotec-uno.png"
-                alt="logoSercotec"
-                title="Logo Sercotec"
-              />
-            </a>
-            <a href="https://www.sercotec.cl/" target="_blank">
-              <img
-                src="img/la_florida.jpg"
-                alt="logoSercotec"
-                title="Logo Sercotec"
-              />
-            </a>
-  
-           
-          </nav>
-        </div>
-      </header>     
+  <header>
+    <div class="header-left">
+      <nav>
+        <a href="https://www.sercotec.cl/centros-de-negocios/centro-de-desarrollo-de-negocios-la-florida/" target="_blank">
+          <img src="img/Logo CDN SECUNDARIO Color + letra blanca.png" alt="centros-de-negocios" title="centros-de-negocios" />
+        </a>
+        <a href="https://www.sercotec.cl/" target="_blank">
+          <img src="img/logo_sercotec-uno.png" alt="logoSercotec" title="Logo Sercotec" />
+        </a>
+        <a href="https://www.sercotec.cl/" target="_blank">
+          <img src="img/la_florida.jpg" alt="logoSercotec" title="Logo Sercotec" />
+        </a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <nav>
+        <ul>
+          <li id="Home">
+            <a href="https://www.sercotec.cl/" target="_blank" title="Pagina de inicio Sercotec">Home</a>
+          </li>
+          <li id="Contacto">
+            <a href="https://www.sercotec.cl/contacto/" target="_blank" title="Pagina de contacto Sercotec">Contacto</a>
+          </li>
+          <li id="Registrate">
+            <a href="https://misdatos.sercotec.cl/" target="_blank" title="Pagina de registro Sercotec">Registrate</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>     
   <main style="background-color: white;">
-      <nav class="navbar navbar-dark bg-dark">
+      <nav class="navbar navbar-dark bg-dark fixed">
         <div class="container-fluid">
           <a class="navbar-brand">Centro de Negocios</a>
           <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="¿Qué Buscas?" aria-label="Search">
-            <input class="form-control me-2" type="search" placeholder="¿Dónde?" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-            <i class="bi bi-search"></i>
+            <input style="cursor: pointer;" class="form-control me-2" type="search" placeholder="¿Qué Buscas?" aria-label="Search" id="searchInput" oninput="mostrarCategorias()" onclick="mostrarCategorias()">
+            <input style="cursor: pointer;" class="form-control me-2" type="search" placeholder="¿Dónde?" aria-label="Search" id="comunaInput" oninput="mostrarComunas()" onclick="mostrarComunas()">
+            <a href="/index.html">
+              <button class="btn btn-outline-success" type="button">Buscar</button>
+            </a>
           </form>
         </div>
       </nav>
-      <div class="clearfix" style="color: black;" > <h3>Resultados de la Busqueda: 1892 Resultados</h3> </div>
-      
-      <ul>
-        <li style="list-style: none;">
-          <a class="home"
-            href="/index.html"
-            target="_blank"
-            title="Pagina de inicio Sercotec"
-            >Home | Hoteles </a
-          >
-        </li>
-      </ul>
+        <div class="clearfix" > <h3> <span style="font-weight: bold;">Resultados en Chile:</span> 1892 resultados</h3> </div>
+        <ul>
+          <li style="list-style: none;">
+            <a class="home" href="/index.html" target="_blank" title="Pagina de inicio Sercotec">Home | Hoteles </a>
+          </li>
+        </ul> 
   
     <section>
-      <div style="background-color:#f7be33;margin-left: 100px; margin-right: 100px;" class="card mb-3" style="max-width: 540px;">
+      <div style="background-color:#C1C1C1;margin-left: 100px; margin-right: 100px;" class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img style="width: 100%; height: 100%;" src="img/curso4.jpg" class="rounded float-start" alt="curso1.jpg">
+            <img style="width: 100%; height: 100%;" src="img/huerto-organico.jpg" class="rounded float-start" alt="curso1.jpg">
           </div>
           <div class="col-md-6">
             <div class="card-body">
@@ -91,7 +83,7 @@
             <img src="img/huerto en casa.jpg" class="rounded float-end" alt="Otra Imagen">
           </div>
         </div>
-        <div style="background-color: white;"class="card-footer">
+        <div style="background-color:  #F4F7F6;"class="card-footer">
           <a href="https://www.instagram.com/centrodnlaflorida/?hl=es" target="_blank" class="btn btn-outline-primary">
             <i class="bi bi-instagram"></i> Instagram
           </a>
@@ -112,10 +104,10 @@
           </a>
         </div>
       </div>    
-      <div style="background-color:#f7be33; margin-left: 100px; margin-right: 100px; "  class="card mb-3" style="max-width: 540px;">
+      <div style="background-color: #F4F7F6; margin-left: 100px; margin-right: 100px; "  class="card mb-3" style="max-width: 540px;">
         <div  class="row g-0">
           <div class="col-md-4">
-            <img style="width: 100%; height: 100%;"src="img/curso1.jpg" class="rounded float-start" alt="curso1.jpg">
+            <img style="width: 100%; height: 100%;"src="img/imagen-curso-programacion-desde-cero-57.jpg" class="rounded float-start" alt="curso1.jpg">
           </div>
           <div  class="col-md-6">
             <div  class="card-body">
@@ -131,7 +123,7 @@
             <img  src="img/udemy.jpg" class="rounded float-end" alt="Otra Imagen">
           </div>
         </div>
-        <div style="background-color: white;" class="card-footer">
+        <div style="background-color:c1c1c1;" class="card-footer">
           <a href="https://www.instagram.com/centrodnlaflorida/?hl=es" target="_blank" class="btn btn-outline-primary">
             <i style="gap: 4px;" class="bi bi-instagram"></i> Instagram
           </a>
@@ -156,7 +148,7 @@
       <div style="background-color:#f7be33;margin-left: 100px; margin-right: 100px;"class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img style="width: 100%; height: 100%;"src="img/lobby-398845_1280.jpg" class="rounded float-start" alt="curso1.jpg">
+            <img style="width: 100%; height: 100%;"src="img/vegetariana.jpg" class="rounded float-start" alt="curso1.jpg">
           </div>
           <div class="col-md-6">
             <div class="card-body">
@@ -193,10 +185,10 @@
           </a>
         </div>
       </div>
-      <div style="background-color:#f7be33;margin-left: 100px; margin-right: 100px;" class="card mb-3" style="max-width: 540px;">
+      <div style="background-color:#bde998;margin-left: 100px; margin-right: 100px;" class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img style="width: 100%; height: 100%;" src="img/curso3.jpg" class="rounded float-start" alt="curso1.jpg">
+            <img style="width: 100%; height: 100%;" src="img/música.jpg" class="rounded float-start" alt="curso1.jpg">
           </div>
           <div class="col-md-6">
             <div class="card-body">
@@ -233,10 +225,10 @@
           </a>
         </div>
       </div>
-      <div style="background-color:#f7be33;margin-left: 100px; margin-right: 100px;" class="card mb-3" style="max-width: 540px;">
+      <div style="background-color:#e9e9e9;margin-left: 100px; margin-right: 100px;" class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img style="width: 100%; height: 100%;" src="img/curso4.jpg" class="rounded float-start" alt="curso1.jpg">
+            <img style="width: 100%; height: 100%;" src="img/pexels-denniz-futalan-2048225.jpg" class="rounded float-start" alt="curso1.jpg">
           </div>
           <div class="col-md-6">
             <div class="card-body">
@@ -275,7 +267,7 @@
           </a>
         </div>
       </div>
-      <div style="background-color:#f7be33;margin-left: 100px; margin-right: 100px;"class="card mb-3" style="max-width: 540px;">
+      <div style="background-color:#8093ff;margin-left: 100px; margin-right: 100px;"class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
             <img style="width: 100%; height: 100%;"src="img/curso5.jpg" class="rounded float-start" alt="curso1.jpg">
@@ -293,7 +285,7 @@
             <img src="img/galletas.jpg" class="rounded float-end" alt="Otra Imagen">
           </div>
         </div>
-        <div style="background-color: white;"class="card-footer">
+        <div style="background-color: rgb(102, 255, 71);"class="card-footer">
           <a href="https://www.instagram.com/centrodnlaflorida/?hl=es" target="_blank" class="btn btn-outline-primary">
             <i class="bi bi-instagram"></i> Instagram
           </a>
@@ -315,7 +307,27 @@
         </div>
       </div>
     </section>
+   
   </main>   
-  <script href="bootstrap.bundle.min.js"></script>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item"><a class="page-link" href="#">6</a></li>
+      <li class="page-item"><a class="page-link" href="#">7</a></li>
+      <li class="page-item"><a class="page-link" href="#">8</a></li>
+      <li class="page-item"><a class="page-link" href="#">9</a></li>
+      <li class="page-item"><a class="page-link" href="#">10</a></li>
+      <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+    </ul>
+  </nav>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script href="bootstrap.bundle.min.js"></script> -->
+  <script src="funciones.js"></script>
 </body>
 </html>
