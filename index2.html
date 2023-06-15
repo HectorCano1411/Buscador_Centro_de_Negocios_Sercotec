@@ -6,63 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
     <title>Catalogo Emprendedores</title>
 </head>
 <body >
-  <header>
-    <div class="header-left">
-      <nav>
-        <a href="https://www.sercotec.cl/centros-de-negocios/centro-de-desarrollo-de-negocios-la-florida/" target="_blank">
-          <img src="img/Logo CDN SECUNDARIO Color + letra blanca.png" alt="centros-de-negocios" title="centros-de-negocios" />
-        </a>
-        <a href="https://www.sercotec.cl/" target="_blank">
-          <img src="img/logo_sercotec-uno.png" alt="logoSercotec" title="Logo Sercotec" />
-        </a>
-        <a href="https://www.sercotec.cl/" target="_blank">
-          <img src="img/la_florida.jpg" alt="logoSercotec" title="Logo Sercotec" />
-        </a>
-      </nav>
-    </div>
-    <div class="header-right">
-      <nav>
-        <ul>
-          <li id="Home">
-            <a href="https://www.sercotec.cl/" target="_blank" title="Pagina de inicio Sercotec">Home</a>
-          </li>
-          <li id="Contacto">
-            <a href="https://www.sercotec.cl/contacto/" target="_blank" title="Pagina de contacto Sercotec">Contacto</a>
-          </li>
-          <li id="Registrate">
-            <a href="https://misdatos.sercotec.cl/" target="_blank" title="Pagina de registro Sercotec">Registrate</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>     
+  
   <main style="background-color: white;">
-      <nav class="navbar navbar-dark bg-dark fixed">
+      <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand">Centro de Negocios</a>
+          <a  class="navbar-brand">Centro de Negocios</a>
           <form class="d-flex">
-            <input style="cursor: pointer;" class="form-control me-2" type="search" placeholder="¿Qué Buscas?" aria-label="Search" id="searchInput" oninput="mostrarCategorias()" onclick="mostrarCategorias()">
-            <input style="cursor: pointer;" class="form-control me-2" type="search" placeholder="¿Dónde?" aria-label="Search" id="comunaInput" oninput="mostrarComunas()" onclick="mostrarComunas()">
-            <a href="/index.html">
-              <button class="btn btn-outline-success" type="button">Buscar</button>
+            <input style="cursor: pointer;font-weight: bold" class="form-control-lg me-2" type="search" placeholder="¿Qué Buscas?" aria-label="Search" id="searchInput" oninput="mostrarCategorias()" onclick="mostrarCategorias()">
+            <input style="cursor: pointer;font-weight: bold" class="form-control-lg me-2" type="search" placeholder="¿Dónde?" aria-label="Search" id="comunaInput" oninput="mostrarComunas()" onclick="mostrarComunas()">
+            <a href="/index3.html">
+              <button class="btn btn-outline-success btn-lg" type="button">Buscar</button>
             </a>
           </form>
         </div>
       </nav>
-        <div class="clearfix" > <h3> <span style="font-weight: bold;">Resultados en Chile:</span> 1892 resultados</h3> </div>
+        
+  
+    <section>
+      <div class="clearfix" > <h3> <span style="font-weight: bold;">Resultados en Chile:</span> 1892 resultados</h3> </div>
         <ul>
           <li style="list-style: none;">
             <a class="home" href="/index.html" target="_blank" title="Pagina de inicio Sercotec">Home | Hoteles </a>
           </li>
         </ul> 
-  
-    <section>
-      <div style="background-color:#C1C1C1;margin-left: 100px; margin-right: 100px;" class="card mb-3" style="max-width: 540px;">
+      <div style="background-color:#C1C1C1;margin-left: 100px; margin-right: 100px;" class="card mb-3 shadow-lg" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
             <img style="width: 100%; height: 100%;" src="img/huerto-organico.jpg" class="rounded float-start" alt="curso1.jpg">
@@ -104,7 +77,7 @@
           </a>
         </div>
       </div>    
-      <div style="background-color: #F4F7F6; margin-left: 100px; margin-right: 100px; "  class="card mb-3" style="max-width: 540px;">
+      <div style="background-color: #F4F7F6; margin-left: 100px; margin-right: 100px; "  class="card mb-3 shadow-lg" style="max-width: 540px;">
         <div  class="row g-0">
           <div class="col-md-4">
             <img style="width: 100%; height: 100%;"src="img/imagen-curso-programacion-desde-cero-57.jpg" class="rounded float-start" alt="curso1.jpg">
@@ -145,7 +118,7 @@
         </a>
         </div>
       </div>
-      <div style="background-color:#f7be33;margin-left: 100px; margin-right: 100px;"class="card mb-3" style="max-width: 540px;">
+      <div style="background-color:#f7be33;margin-left: 100px; margin-right: 100px;"class="card mb-3 shadow-lg" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
             <img style="width: 100%; height: 100%;"src="img/vegetariana.jpg" class="rounded float-start" alt="curso1.jpg">
@@ -185,7 +158,7 @@
           </a>
         </div>
       </div>
-      <div style="background-color:#bde998;margin-left: 100px; margin-right: 100px;" class="card mb-3" style="max-width: 540px;">
+      <div style="background-color:#bde998;margin-left: 100px; margin-right: 100px;" class="card mb-3 shadow-lg" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
             <img style="width: 100%; height: 100%;" src="img/música.jpg" class="rounded float-start" alt="curso1.jpg">
@@ -225,7 +198,7 @@
           </a>
         </div>
       </div>
-      <div style="background-color:#e9e9e9;margin-left: 100px; margin-right: 100px;" class="card mb-3" style="max-width: 540px;">
+      <div style="background-color:#e9e9e9;margin-left: 100px; margin-right: 100px;" class="card mb-3 shadow-lg" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
             <img style="width: 100%; height: 100%;" src="img/pexels-denniz-futalan-2048225.jpg" class="rounded float-start" alt="curso1.jpg">
@@ -267,7 +240,7 @@
           </a>
         </div>
       </div>
-      <div style="background-color:#8093ff;margin-left: 100px; margin-right: 100px;"class="card mb-3" style="max-width: 540px;">
+      <div style="background-color:#8093ff;margin-left: 100px; margin-right: 100px;"class="card mb-3 shadow-lg" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
             <img style="width: 100%; height: 100%;"src="img/curso5.jpg" class="rounded float-start" alt="curso1.jpg">
@@ -306,28 +279,109 @@
           </a>
         </div>
       </div>
+      <section style="background-color: black;  height: 40px; ">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination  justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">7</a></li>
+            <li class="page-item"><a class="page-link" href="#">8</a></li>
+            <li class="page-item"><a class="page-link" href="#">9</a></li>
+            <li class="page-item"><a class="page-link" href="#">10</a></li>
+            <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+          </ul>
+        </nav>
+      </section>   
     </section>
-   
-  </main>   
-  <nav aria-label="Page navigation example">
-    <ul class="pagination justify-content-center">
-      <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
-      <li class="page-item"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item"><a class="page-link" href="#">4</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item"><a class="page-link" href="#">5</a></li>
-      <li class="page-item"><a class="page-link" href="#">6</a></li>
-      <li class="page-item"><a class="page-link" href="#">7</a></li>
-      <li class="page-item"><a class="page-link" href="#">8</a></li>
-      <li class="page-item"><a class="page-link" href="#">9</a></li>
-      <li class="page-item"><a class="page-link" href="#">10</a></li>
-      <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
-    </ul>
-  </nav>
+  </main>
+  <footer>
+    <section class="fo">
+      <nav style=" background-color: rgba(51,51,51,.8);" class="navbar navbar-expand-lg ">
+        <div style="background-color: transparent;border-color: transparent;" class="container-fluid ">
+          <a style="background-color: transparent;border-color: transparent;color: white; margin-left: 50px;" class="navbar-brand justify-content-center"  href="#">Acerca de Nosotros</a>
+          <a style="background-color: transparent;border-color: transparent;color: white; margin-left: 50px;" class="navbar-brand justify-content-center"  href="#"><span class="bi bi-envelope-fill"></span>
+            Contacto</a>
+          <a style="background-color: transparent;border-color: transparent;color: white; margin-left: 50px;" class="navbar-brand justify-content-center"  href="#">Terminos y Condiciones</a>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+           <fieldset class="fiel">
+            <h4>Contenido</h4>
+            <p>
+              Centro de Negocios presenta el Catálogo de Emprendedores      
+              de La Florida. <br> En el que encontrarás la solución que necesitas <br> 
+              de forma rápida y sencilla.<br> Realiza tus Búsquedas comerciales <br>
+              desde cualquier lugar y dispositivos.
+            </p>
+          </fieldset>
+          </div>
+          <div class="col">
+           <fieldset class="fiel">
+            <h4>Nuestros Colaboradores</h4>
+            <ul>
+              <li><a class="socios" href="#">Inacap La Granja</a></li>
+              <li><a class="socios" href="#">Sercotec</a></li>
+              <li><a class="socios" href="#">Santiago Innova</a></li>
+              <li><a class="socios" href="#">Municipalidad de La Florida</a></li>   
+            </ul>
+            <div  class="social-icons">
+              <a href="https://www.facebook.com/centrodnlaflorida/?locale=es_LA" target="_blank">
+                <i class="bi bi-facebook icon-large"></i>
+              </a>          
+              <a href="https://www.instagram.com/centrodnlaflorida/?hl=es" target="_blank">
+                <i  class="bi bi-instagram icon-large"></i>
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=+(56) 9 9443 7795" target="_blank">
+                <i class="bi bi-whatsapp icon-large"></i>
+              </a>
+              <a href="https://www.youtube.com/c/CentrodeNegociosSercotecLaFlorida?app=desktop" target="_blank">
+                <i class="bi bi-youtube icon-large"></i>
+              </a>
+            </div>
+          </fieldset>
+          </div>
+          <div class="col">
+            <fieldset class="serco">
+              <h4>Protección de datos personales</h4>
+              <p>
+                La política de tratamiento de datos personales del Catálogo de Emprendedores puede ser consultada en Términos y condiciones.
+              </p>
+              <div class="image-container">
+                <a href="https://www.sercotec.cl/centros-de-negocios/centro-de-desarrollo-de-negocios-la-florida/" target="_blank">
+                  <img src="img/logo_sercotec_web.png" alt="centros-de-negocios" title="centros-de-negocios" />
+                </a>
+                <a href="https://www.santiagoinnova.com/" target="_blank">
+                  <img src="img/Santiago_innova_com.png" alt="centros-de-negocios" title="centros-de-negocios" />
+                </a>
+                <a href="https://portales.inacap.cl/" target="_blank">
+                  <img src="img/logoFooter-inacap.png" alt="centros-de-negocios" title="centros-de-negocios" />
+                </a>
+                <a href="https://www.laflorida.cl/sitio/" target="_blank">
+                  <img src="img/LOGO_WEB-02_la florida..png" alt="centros-de-negocios" title="centros-de-negocios" />
+                </a>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- <script href="bootstrap.bundle.min.js"></script> -->
+  <script href="bootstrap.bundle.min.js"></script>
   <script src="funciones.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/bootstrap@5.7.0/dist/js/bootstrap.min.js"></script>
+  
+  
 </body>
+
+
 </html>

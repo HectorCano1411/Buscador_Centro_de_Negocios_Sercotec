@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles2.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" /> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <title>Catalogo de Proveedores</title>
+</head>
+<body>
+    <nav   class="navbar bg-transparent fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img style="max-width: 250px;" src="img/Logo CDN SECUNDARIO Color + letra blanca.png" alt="">
+         </a>
+          <button style="background-color: rgba(51,51,51,.5);" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end bg-transparent" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 style="color: white" class="offcanvas-title" id="offcanvasNavbarLabel">Centro De Negocios</h5>
+              <button  type="button" class="btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">  
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a style="color: white;" class="nav-link active" aria-current="page" href="https://www.sercotec.cl/centros-de-negocios/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a style="color: white" class="nav-link" href="https://www.sercotec.cl/centros-de-negocios/">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a style="color: white" class="nav-link" href="https://www.sercotec.cl/centros-de-negocios/">Registrate</a>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="¿Qué Buscas?" aria-label="Search" >
+                <a href="/index2.html">
+                <button class="btn btn-primary btn"  type="button" >Buscar</button>
+                  </a>
+              </form>
+            </div>
+          </div>
+        </div>
+  </nav>
+  <div id="carouselExampleAutoplaying" class="carousel slide card"  data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background-image: url(img/pexels-fredson-silva-14772229.jpg);"></div>
+    <div class="carousel-item" style="background-image: url(img/pexels-francisco-cornellana-castells-1062021.jpg);"></div>
+    <div class="carousel-item" style="background-image: url(img/arches-national-park-1846759_1280.jpg);"></div>
+    <div class="carousel-item" style="background-image: url(img/pexels-jahangeer-bm-1619299.jpg);"></div>
+    <div class="carousel-item" style="background-image: url(img/pexels-fredson-silva-14772229.jpg);"></div>
+    <div class="carousel-item" style="background-image: url(img/pexels-alisha-lubben-2017747.jpg);"></div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  <div class="card-img-overlay">
+    <div class="container ">
+      <fieldset class="bordes">
+        <h1 class="titulo">Registro Proveedores Clientes Centros  RM</h1>
+        <p class="parrafo">Acompañando a las Pymes hace más de 50 años y en las difíciles, ¡mucho más!</p>
+         <div style="display: flex; align-items: center; ">  
+      <nav style="margin-left:200px; margin-right: 200px; " class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div  class="container-fluid mx-auto">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">   
+          <form class="d-flex">
+            <div class="input-group">
+              <input style="cursor: pointer;font-weight: bold;" class="form-control form-control-lg" type="search" placeholder="¿Qué Buscas?" aria-label="aria-controls" id="searchInput" oninput="mostrarCategorias()" onclick="mostrarCategorias()"required>
+              <input style="cursor: pointer;font-weight: bold;" class="form-control form-control-lg" type="search" placeholder="¿Dónde?" aria-label="Search" id="comunaInput" oninput="mostrarComunas()" onclick="mostrarComunas()"required>
+              <div class="input-group-append">
+                <a href="/index2.html">
+                      <button class="btn btn-primary btn-lg"  type="button" >
+                        <i class="bi bi-search"></i> Buscar
+                      </button>
+                </a>
+              </div>
+            </div>
+          </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    </fieldset>
+  </div>
+  <div class="sticky-lg-bottom  btn-lg float-end">
+    <span  class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="¿Necesitas ayuda?">
+      <a href="https://www.sercotec.cl/centros-de-negocios/centro-de-desarrollo-de-negocios-la-florida/">
+        <button class="btn btn-danger btn-lg" type="button" >
+          <i class="bi bi-chat-left-dots"></i> Chat
+        </button>
+      </a>
+    </span>
+  </div>
+
+</div>
+
+<footer>
+  <section class="fo">
+    <nav style=" background-color: rgba(51,51,51,.5);cursor: pointer;" class="navbar navbar-expand-lg bg-hover ">
+      <div style="background-color: transparent;border-color: transparent;cursor: pointer;" class="container-fluid ">
+        <a style="background-color: transparent;border-color: transparent;color: white;cursor: pointer; margin-left: 50px;" class="navbar-brand justify-content-center"  href="#Home">Acerca de Nosotros</a>
+        <a style="background-color: transparent;border-color: transparent;color: white;cursor: pointer; margin-left: 50px;" class="navbar-brand justify-content-center"  href="#contacto"><span class="bi bi-envelope-fill"></span>
+          Contacto</a>
+        <a style="background-color: transparent;border-color: transparent;color: white; margin-left: 50px;cursor: pointer;" class="navbar-brand justify-content-center"  href="#Registrate">Terminos y Condiciones</a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+         <fieldset class="fiel">
+          <h4>Contenido</h4>
+          <p>
+            Centro de Negocios presenta el Catálogo de Emprendedores      
+            de La Florida. <br> En el que encontrarás la solución que necesitas <br> 
+            de forma rápida y sencilla.<br> Realiza tus Búsquedas comerciales <br>
+            desde cualquier lugar y dispositivos.
+          </p>
+        </fieldset>
+        </div>
+        <div class="col">
+         <fieldset class="fiel">
+          <h4>Nuestros Colaboradores</h4>
+          <ul>
+            <li><a class="socios" href="https://portales.inacap.cl/">Inacap La Granja</a></li>
+            <li><a class="socios" href="https://www.sercotec.cl/centros-de-negocios/">Sercotec</a></li>
+            <li><a class="socios" href="https://www.santiagoinnova.com/">Santiago Innova</a></li>
+            <li><a class="socios" href="https://www.laflorida.cl/sitio/">Municipalidad de La Florida</a></li>   
+          </ul>
+          <div style="cursor: pointer;" class="social-icons">
+            <a href="https://www.facebook.com/centrodnlaflorida/?locale=es_LA" target="_blank">
+              <i style="cursor: pointer;" class="bi bi-facebook icon-large bg-hover"></i>
+            </a>          
+            <a href="https://www.instagram.com/centrodnlaflorida/?hl=es" target="_blank">
+              <i style="cursor: pointer;" class="bi bi-instagram icon-large"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=+(56) 9 9443 7795" target="_blank">
+              <i style="cursor: pointer;" class="bi bi-whatsapp icon-large "></i>
+            </a>
+            <a href="https://www.youtube.com/c/CentrodeNegociosSercotecLaFlorida?app=desktop" target="_blank">
+              <i style="cursor: pointer;" class="bi bi-youtube icon-large"></i>
+            </a>
+          </div>
+        </fieldset>
+        </div>
+        <div class="col">
+          <fieldset class="serco">
+            <h4>Protección de datos personales</h4>
+            <p>
+              La política de tratamiento de datos personales del Catálogo de Emprendedores puede ser consultada en Términos y condiciones.
+            </p>
+            <div class="image-container">
+              <a href="https://www.sercotec.cl/centros-de-negocios/centro-de-desarrollo-de-negocios-la-florida/" target="_blank">
+                <img  style="cursor: pointer;"src="img/logo_sercotec_web.png" alt="centros-de-negocios" title="centros-de-negocios" />
+              </a>
+              <a href="https://www.santiagoinnova.com/" target="_blank">
+                <img style="cursor: pointer;" src="img/Santiago_innova_com.png" alt="centros-de-negocios" title="centros-de-negocios" />
+              </a>
+              <a href="https://portales.inacap.cl/" target="_blank">
+                <img style="cursor: pointer;"src="img/logoFooter-inacap.png" alt="centros-de-negocios" title="centros-de-negocios" />
+              </a>
+              <a href="https://www.laflorida.cl/sitio/" target="_blank">
+                <img style="cursor: pointer;" src="img/LOGO_WEB-02_la florida..png" alt="centros-de-negocios" title="centros-de-negocios" />
+              </a>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+<script src="funciones.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/bootstrap@5.7.0/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

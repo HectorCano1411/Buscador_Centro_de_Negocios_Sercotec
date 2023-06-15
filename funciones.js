@@ -32,6 +32,8 @@ function mostrarCategorias() {
     for (var i = 0; i < categorias.length; i++) {
       var option = document.createElement("option");
       option.value = categorias[i];
+      option.style.fontSize = "46px"; 
+      option.style.fontWeight = "bold"; 
       dataList.appendChild(option);
     }
 
@@ -86,9 +88,18 @@ function mostrarComunas() {
   for (var i = 0; i < comunas.length; i++) {
     var option = document.createElement("option");
     option.value = comunas[i];
+    option.style.fontSize = "20px"; 
+    option.style.fontWeight = "bold"; 
     dataList.appendChild(option);
   }
 
   comunaInput.setAttribute("list", "comunasList");
   document.body.appendChild(dataList);
 }
+
+
+
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl);
+  });
